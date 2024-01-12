@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfólio de Magno de Oliveira</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body id="body">
+    <button onclick="toggleDarkMode()">Mudar para o modo escuro</button>
+    <h1>Portfólio em construção, disponível em breve. 😊</h1>
+    <!-- Adicione mais detalhes sobre você aqui -->
+    <script>
+        var darkMode = false;
+        function toggleDarkMode() {
+            var body = document.getElementById('body');
+            darkMode = !darkMode;
+            if (darkMode) {
+                body.className = 'dark-mode';
+            } else {
+                body.className = 'light-mode';
+            }
+        }
+    </script>
+</body>
+</html>
